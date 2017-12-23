@@ -22,9 +22,7 @@ const handlers = {
     },
     'GetRaces': function () {
         // Query BOF API for races
-        bofApi.GetRaces({
-
-        }).then(data => {
+        bofApi.GetRaces(SlotsToQuery(this.event.request.intent.slots)).then(data => {
             // Create speech output
             const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(data);
             this.emit(':tell', speechOutput);
@@ -54,3 +52,21 @@ exports.handler = function (event, context) {
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
+
+
+function SlotsToQuery(slots) {
+    var query = {};
+    if (slots.hasOwnProperty('StartDate') && slots.StartDate.value) {
+        query.start_date = slots.StartDate.value;
+    }
+    if (slots.hasOwnProperty('EndDate') && slots.EndDate.value) {
+        query.end_date = slots.EndDate.value;
+    }
+    if (slots.hasOwnProperty('RaceDate') && slots.RaceDate.value) {
+        query.search_date = slots.RaceDate.value;
+    }
+    if (slots.hasOwnProperty('Region') && slots.Region.value) {
+        query.assoc = slots.Region.value;
+    }
+    return query;
+}

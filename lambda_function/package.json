@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "alexa-sdk": "^1.0.24",
+    "amazon-date-parser": "^0.1.5",
     "node-fetch": "^1.7.3"
   }
 }
