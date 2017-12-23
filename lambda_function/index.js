@@ -13,6 +13,7 @@
 const Alexa = require('alexa-sdk');
 const languageStrings = require('./strings').default
 const bofApi = require('./bof_api')
+const slotMapping = require('./slot_mapping')
 
 const APP_ID = process.env('APP_ID');  // TODO replace with your app ID (OPTIONAL).
 
@@ -66,7 +67,10 @@ function SlotsToQuery(slots) {
         query.search_date = slots.RaceDate.value;
     }
     if (slots.hasOwnProperty('Region') && slots.Region.value) {
-        query.assoc = slots.Region.value;
+        var x = slotMapping.region[slots.Region.value];
+        if (x) {
+            query.assoc = x;
+        }
     }
     return query;
 }
