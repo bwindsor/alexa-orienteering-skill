@@ -1,3 +1,5 @@
+const slotMapping = require('./slot_mapping')
+
 languageStrings = {
     'en': {
         translation: {
@@ -11,7 +13,7 @@ languageStrings = {
     },
 };
 
-function MakeRaceDescription(allData) {
+function MakeRaceDescription(allData, queryData) {
     var numRaces = allData.length;
     if (numRaces == 0) {
         return "There are no upcoming races."
@@ -42,7 +44,17 @@ function MakeRaceDescription(allData) {
     } else {
         combinedString = 'I\'m not sure where or when the next one is though';
     }
-    return 'There are ' + numRaces.toString() + ' upcoming races. ' + combinedString + '.';
+
+    // These properties are accepted directly by BOF's API
+//     assoc: "EAOA",
+//     club: "WAOC,LEI",
+//     level: "int,a,b,c,d,act"
+    var bounceString = '';
+    if (queryData.assoc) {
+        bounceString = ' in ' + slotMapping.regionToSpeech(queryData.assoc);
+    }
+
+    return 'There are ' + numRaces.toString() + ' upcoming races' + bounceString + '. ' + combinedString + '.';
 }
 
 module.exports = {

@@ -23,9 +23,10 @@ const handlers = {
     },
     'GetRaces': function () {
         // Query BOF API for races
-        bofApi.GetRaces(SlotsToQuery(this.event.request.intent.slots)).then(data => {
+        var query = SlotsToQuery(this.event.request.intent.slots);
+        bofApi.GetRaces(query).then(data => {
             // Create speech output
-            const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(data);
+            const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(data, query);
             this.emit(':tell', speechOutput);
         }).catch(err => {
             console.log(err)
@@ -67,9 +68,9 @@ function SlotsToQuery(slots) {
         query.search_date = slots.RaceDate.value;
     }
     if (slots.hasOwnProperty('Region') && slots.Region.value) {
-        var x = slotMapping.region[slots.Region.value];
-        if (x) {
-            query.assoc = x;
+        var lowerVal = slots.Region.value.toLowerCase();
+        if (slotMapping.hasOwnProperty(lowerVal)){
+            query.assoc = slotMapping.region[lowerVal];
         }
     }
     return query;

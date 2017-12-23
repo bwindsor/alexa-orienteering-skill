@@ -1,8 +1,13 @@
 GetRaces get upcoming races
+GetRaces find upcoming races
 GetRaces what races are coming up
 GetRaces get upcoming races in {Region}
-GetRaces get races on {RaceDate}
-GetRaces get races {RaceDate}
-GetRaces get upcoming races in {Region} from {StartDate} to {EndDate}
-GetRaces get upcoming races in {Region} from {StartDate} until {EndDate}
-GetRaces get upcoming races in {Region} between {StartDate} and {EndDate}
+GetRaces find upcoming orienteering events in {Region}
+GetRaces find future orienteering events
+GetRaces find races on {RaceDate}
+GetRaces find races {RaceDate}
+GetRaces find races in {Region} {RaceDate}
+GetRaces find races in {Region} on {RaceDate}
+GetRaces find upcoming races in {Region} from {StartDate} to {EndDate}
+GetRaces find upcoming races in {Region} from {StartDate} until {EndDate}
+GetRaces find upcoming races in {Region} between {StartDate} and {EndDate}

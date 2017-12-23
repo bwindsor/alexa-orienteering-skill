@@ -14,6 +14,10 @@
                 {
                     "name": "EndDate",
                     "type": "AMAZON.DATE"
+                },
+                {
+                    "name": "RaceDate",
+                    "type": "AMAZON.DATE"
                 }
             ]
         }
