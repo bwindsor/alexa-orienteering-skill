@@ -50,11 +50,11 @@ function MakeLocationString(allData) {
         return null;
     }
     var firstDateStrings = allData.filter(d => d.date == allData[0].date).map(data => {
-        if (data.venue && data.nearest_town) {
+        if (data.venue.trim() && data.nearest_town.trim()) {
             return 'at ' + data.venue + ' near ' + data.nearest_town;
-        } else if (data.venue) {
+        } else if (data.venue.trim()) {
             return 'at ' + data.venue;
-        } else if (data.nearest_town) {
+        } else if (data.nearest_town.trim()) {
             return 'near ' + data.nearest_town;
         } else {
             return null;
