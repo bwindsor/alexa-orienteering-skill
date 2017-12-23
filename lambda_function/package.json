@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "alexa-sdk": "^1.0.24"
+    "alexa-sdk": "^1.0.24",
+    "node-fetch": "^1.7.3"
   }
 }
