@@ -22,12 +22,16 @@ const handlers = {
     },
     'GetRaces': function () {
         // Query BOF API for races
-        const races = bofApi.GetRaces({
+        bofApi.GetRaces({
 
+        }).then(data => {
+            // Create speech output
+            const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(data);
+            this.emit(':tell', speechOutput);
+        }).catch(err => {
+            console.log(err)
+            this.emit(':tell', this.t('ERROR_BOF'))
         })
-        // Create speech output
-        const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(races);
-        this.emit(':tell', speechOutput);
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = this.t('HELP_MESSAGE');

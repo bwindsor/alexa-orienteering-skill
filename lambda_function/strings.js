@@ -11,8 +11,41 @@ languageStrings = {
     },
 };
 
-function MakeRaceDescription(data) {
-    return 'The next race is somewhere at some point'
+function MakeRaceDescription(allData) {
+    var numRaces = allData.length;
+    if (numRaces == 0) {
+        return "There are no upcoming races."
+    }
+    var data = allData[0];
+    var locString = 'The next one is ';
+    if (data.venue && data.nearest_town) {
+        locString += 'at ' + data.venue + ' near ' + data.nearest_town;
+    } else if (data.venue) {
+        locString += 'at ' + data.venue;
+    } else if (data.nearest_town) {
+        locString += 'near ' + data.nearest_town;
+    } else {
+        // Note equals not plus-equals
+        locString = null;
+    }
+    var dateString = null;
+    if (data.date) {
+        dateString = 'on ' + data.date;
+    }
+    var combinedString = null;
+    if (locString && dateString) {
+        combinedString = locString + ' ' + dateString;
+    } else if (locString) {
+        combinedString = locString;
+    } else if (dateString) {
+        combinedString = 'The next one is ' + dateString + ', but I\'m not sure where';
+    } else {
+        combinedString = 'I\'m not sure where or when the next one is though';
+    }
+    return 'There are ' + numRaces.toString() + ' upcoming races. ' + combinedString + '.';
 }
 
-exports.default = languageStrings;
+module.exports = {
+    MakeRaceDescription: MakeRaceDescription
+}
+module.exports.default = languageStrings;
