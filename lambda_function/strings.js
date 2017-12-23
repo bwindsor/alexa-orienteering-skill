@@ -51,7 +51,7 @@ function MakeRaceDescription(allData, queryData) {
 //     level: "int,a,b,c,d,act"
     var bounceString = '';
     if (queryData.assoc) {
-        bounceString = ' in ' + slotMapping.regionToSpeech(queryData.assoc);
+        bounceString = ' in ' + slotMapping.regionToSpeech[queryData.assoc];
     }
 
     return 'There are ' + numRaces.toString() + ' upcoming races' + bounceString + '. ' + combinedString + '.';
