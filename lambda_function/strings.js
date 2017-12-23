@@ -28,7 +28,7 @@ function MakeRaceDescription(allData, queryData) {
     } else {
         combinedString = 'The next one is ' + dateString + ', but I\'m not sure where';
     }
-    
+
     // These properties are accepted directly by BOF's API
     //     assoc: "EAOA",
     //     club: "WAOC,LEI",
@@ -59,7 +59,7 @@ function MakeLocationString(allData) {
     if (firstDateStrings.length == 1) {
         return 'The next one is at ' + firstDateStrings[0];
     } else {
-        var commaParts = firstDateStrings.slice(0, firstDateStrings.length - 2).join(', ');
+        var commaParts = firstDateStrings.slice(0, firstDateStrings.length - 1).join(', ');
         return 'The next ones are at ' + commaParts + ' and ' + firstDateStrings[firstDateStrings.length - 1];
     }
 }
