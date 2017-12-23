@@ -1,0 +1,24 @@
+SWOA
+SEOA
+SCOA
+EAOA
+EMOA
+WMOA
+WOA
+YHOA
+NEOA
+NWOA
+NIOA
+SOA
+south west
+south east
+south central
+east anglia
+east midlands
+west midlands
+wales
+yorkshire
+north east
+north west
+northern ireland
+scotland

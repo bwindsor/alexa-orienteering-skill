@@ -1,0 +1,21 @@
+{
+    "intents": [
+        {
+            "intent": "GetRaces",
+            "slots": [
+                {
+                    "name": "Region",
+                    "type": "ORIENTEERING_REGION"
+                },
+                {
+                    "name": "StartDate",
+                    "type": "AMAZON.DATE"
+                },
+                {
+                    "name": "EndDate",
+                    "type": "AMAZON.DATE"
+                }
+            ]
+        }
+    ]
+}
