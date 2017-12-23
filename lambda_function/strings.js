@@ -20,42 +20,48 @@ function MakeRaceDescription(allData, queryData) {
         return "There are no upcoming races."
     }
     var data = allData[0];
-    var locString = 'The next one is ';
-    if (data.venue && data.nearest_town) {
-        locString += 'at ' + data.venue + ' near ' + data.nearest_town;
-    } else if (data.venue) {
-        locString += 'at ' + data.venue;
-    } else if (data.nearest_town) {
-        locString += 'near ' + data.nearest_town;
-    } else {
-        // Note equals not plus-equals
-        locString = null;
-    }
-    var dateString = null;
-    if (data.date) {
-        dateString = 'on ' + data.date;
-    }
+    var locString = MakeLocationString(allData);
+    var dateString = 'on ' + data.date;
     var combinedString = null;
-    if (locString && dateString) {
+    if (locString) {
         combinedString = locString + ' ' + dateString;
-    } else if (locString) {
-        combinedString = locString;
-    } else if (dateString) {
-        combinedString = 'The next one is ' + dateString + ', but I\'m not sure where';
     } else {
-        combinedString = 'I\'m not sure where or when the next one is though';
+        combinedString = 'The next one is ' + dateString + ', but I\'m not sure where';
     }
-
+    
     // These properties are accepted directly by BOF's API
-//     assoc: "EAOA",
-//     club: "WAOC,LEI",
-//     level: "int,a,b,c,d,act"
+    //     assoc: "EAOA",
+    //     club: "WAOC,LEI",
+    //     level: "int,a,b,c,d,act"
     var bounceString = '';
     if (queryData.assoc) {
         bounceString = ' in ' + slotMapping.regionToSpeech[queryData.assoc];
     }
 
     return 'There are ' + numRaces.toString() + ' races' + bounceString + '. ' + combinedString + '.';
+}
+
+function MakeLocationString(allData) {
+    if (allData.length == 0){
+        return null;
+    }
+    var firstDateStrings = allData.filter(d => d.date == allData[0].date).map(data => {
+        if (data.venue && data.nearest_town) {
+            return 'at ' + data.venue + ' near ' + data.nearest_town;
+        } else if (data.venue) {
+            return 'at ' + data.venue;
+        } else if (data.nearest_town) {
+            return 'near ' + data.nearest_town;
+        } else {
+            return null;
+        }
+    });
+    if (firstDateStrings.length == 1) {
+        return 'The next one is at ' + firstDateStrings[0];
+    } else {
+        var commaParts = firstDateStrings.slice(0, firstDateStrings.length - 2).join(', ');
+        return 'The next ones are at ' + commaParts + ' and ' + firstDateStrings[firstDateStrings.length - 1];
+    }
 }
 
 module.exports = {
