@@ -1,8 +1,8 @@
 GetRaces get upcoming races
 GetRaces what races are coming up
 GetRaces get upcoming races in {Region}
-GetRaces get races on {StartDate}
-GetRaces get races {StartDate}
+GetRaces get races on {RaceDate}
+GetRaces get races {RaceDate}
 GetRaces get upcoming races in {Region} from {StartDate} to {EndDate}
 GetRaces get upcoming races in {Region} from {StartDate} until {EndDate}
 GetRaces get upcoming races in {Region} between {StartDate} and {EndDate}
