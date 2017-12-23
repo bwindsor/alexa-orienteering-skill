@@ -79,5 +79,13 @@ function SlotsToQuery(slots) {
             return null
         }
     }
+    if (slots.hasOwnProperty('Level') && slots.Level.value) {
+        var lowerVal = slots.Level.value.toLowerCase();
+        if (slotMapping.raceLevel.hasOwnProperty(lowerVal)) {
+            query.level = slotMapping.raceLevel[lowerVal];
+        } else {
+            return null
+        }
+    }
     return query;
 }

@@ -41,10 +41,10 @@ const regionToSpeech = {
 }
 
 const raceLevel = {
-    'a': 'a',
-    'b': 'b',
-    'c': 'c',
-    'd': 'd',
+    'level a': 'a',
+    'level b': 'b',
+    'level c': 'c',
+    'level d': 'd',
     'international': 'int',
     'activity': 'act'
 }

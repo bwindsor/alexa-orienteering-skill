@@ -18,6 +18,10 @@
                 {
                     "name": "RaceDate",
                     "type": "AMAZON.DATE"
+                },
+                {
+                    "name": "Level",
+                    "type": "ORIENTEERING_LEVEL"
                 }
             ]
         }

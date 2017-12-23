@@ -33,12 +33,16 @@ function MakeRaceDescription(allData, queryData) {
     //     assoc: "EAOA",
     //     club: "WAOC,LEI",
     //     level: "int,a,b,c,d,act"
-    var bounceString = '';
+    var locationBounceString = '';
     if (queryData.assoc) {
-        bounceString = ' in ' + slotMapping.regionToSpeech[queryData.assoc];
+        locationBounceString = ' in ' + slotMapping.regionToSpeech[queryData.assoc];
+    }
+    var levelBounceString = '';
+    if (queryData.level) {
+        levelBounceString = ' ' + slotMapping.raceLevelToSpeech[queryData.level];
     }
 
-    return 'There are ' + numRaces.toString() + ' races' + bounceString + '. ' + combinedString + '.';
+    return 'There are ' + numRaces.toString() + levelBounceString + ' races' + locationBounceString + '. ' + combinedString + '.';
 }
 
 function MakeLocationString(allData) {

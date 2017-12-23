@@ -8,6 +8,13 @@ GetRaces find races on {RaceDate}
 GetRaces find races {RaceDate}
 GetRaces find races in {Region} {RaceDate}
 GetRaces find races in {Region} on {RaceDate}
-GetRaces find upcoming races in {Region} from {StartDate} to {EndDate}
-GetRaces find upcoming races in {Region} from {StartDate} until {EndDate}
-GetRaces find upcoming races in {Region} between {StartDate} and {EndDate}
+GetRaces find races in {Region} from {StartDate} to {EndDate}
+GetRaces find races in {Region} from {StartDate} until {EndDate}
+GetRaces find races in {Region} between {StartDate} and {EndDate}
+GetRaces find {Level} races on {RaceDate}
+GetRaces find {Level} races {RaceDate}
+GetRaces find {Level} races in {Region} {RaceDate}
+GetRaces find {Level} races in {Region} on {RaceDate}
+GetRaces find {Level} races in {Region} from {StartDate} to {EndDate}
+GetRaces find {Level} races in {Region} from {StartDate} until {EndDate}
+GetRaces find {Level} races in {Region} between {StartDate} and {EndDate}
