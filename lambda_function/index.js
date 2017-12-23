@@ -14,7 +14,7 @@ const Alexa = require('alexa-sdk');
 const languageStrings = require('./strings').default
 const bofApi = require('./bof_api')
 
-const APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
+const APP_ID = process.env('APP_ID');  // TODO replace with your app ID (OPTIONAL).
 
 const handlers = {
     'LaunchRequest': function () {
