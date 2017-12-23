@@ -69,7 +69,7 @@ function SlotsToQuery(slots) {
     }
     if (slots.hasOwnProperty('Region') && slots.Region.value) {
         var lowerVal = slots.Region.value.toLowerCase();
-        if (slotMapping.hasOwnProperty(lowerVal)){
+        if (slotMapping.region.hasOwnProperty(lowerVal)){
             query.assoc = slotMapping.region[lowerVal];
         }
     }
