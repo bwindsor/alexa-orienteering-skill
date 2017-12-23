@@ -24,6 +24,10 @@ const handlers = {
     'GetRaces': function () {
         // Query BOF API for races
         var query = SlotsToQuery(this.event.request.intent.slots);
+        if (query == null) {
+            this.emit(':tell', this.t('ERROR_BAD_QUESTION'))
+            return
+        }
         bofApi.GetRaces(query).then(data => {
             // Create speech output
             const speechOutput = this.t('RACE_DESCRIPTION_GENERATOR')(data, query);
@@ -71,6 +75,8 @@ function SlotsToQuery(slots) {
         var lowerVal = slots.Region.value.toLowerCase();
         if (slotMapping.region.hasOwnProperty(lowerVal)){
             query.assoc = slotMapping.region[lowerVal];
+        } else {
+            return null
         }
     }
     return query;

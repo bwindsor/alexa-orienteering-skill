@@ -8,6 +8,7 @@ languageStrings = {
             HELP_MESSAGE: 'You can say get upcoming races in east anglia this weekend, or, you can say exit... What can I help you with?',
             STOP_MESSAGE: 'Happy navigating!',
             ERROR_BOF: 'Sorry, I couldn\'t manage to talk to British Orienteering at the moment',
+            ERROR_BAD_QUESTION: 'Sorry, I didn\'t understand that',
             RACE_DESCRIPTION_GENERATOR: MakeRaceDescription
         },
     },
@@ -54,7 +55,7 @@ function MakeRaceDescription(allData, queryData) {
         bounceString = ' in ' + slotMapping.regionToSpeech[queryData.assoc];
     }
 
-    return 'There are ' + numRaces.toString() + ' upcoming races' + bounceString + '. ' + combinedString + '.';
+    return 'There are ' + numRaces.toString() + ' races' + bounceString + '. ' + combinedString + '.';
 }
 
 module.exports = {
