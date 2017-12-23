@@ -49,22 +49,22 @@ function MakeLocationString(allData) {
     if (allData.length == 0){
         return null;
     }
-    var firstDateStrings = allData.filter(d => d.date == allData[0].date).map(data => {
-        if (data.venue.trim() && data.nearest_town.trim()) {
-            return 'at ' + data.venue + ' near ' + data.nearest_town;
-        } else if (data.venue.trim()) {
-            return 'at ' + data.venue;
-        } else if (data.nearest_town.trim()) {
-            return 'near ' + data.nearest_town;
-        } else {
-            return null;
-        }
-    });
+        var firstDateStrings = allData.filter(d => d.date == allData[0].date).map(data => {
+            if (data.venue.trim() && data.nearest_town.trim()) {
+                return 'at ' + data.venue + ' near ' + data.nearest_town;
+            } else if (data.venue.trim()) {
+                return 'at ' + data.venue;
+            } else if (data.nearest_town.trim()) {
+                return 'near ' + data.nearest_town;
+            } else {
+                return null;
+            }
+        });
     if (firstDateStrings.length == 1) {
-        return 'The next one is at ' + firstDateStrings[0];
+        return 'The next one is ' + firstDateStrings[0];
     } else {
         var commaParts = firstDateStrings.slice(0, firstDateStrings.length - 1).join(', ');
-        return 'The next ones are at ' + commaParts + ' and ' + firstDateStrings[firstDateStrings.length - 1];
+        return 'The next ones are ' + commaParts + ' and ' + firstDateStrings[firstDateStrings.length - 1];
     }
 }
 
