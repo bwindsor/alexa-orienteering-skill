@@ -53,7 +53,7 @@ function MakeLocationDateString(allData) {
         } else {
             return null;
         }
-    });
+    }).filter(s => s != null);
     if (dateStrings.length == 1) {
         return 'It is ' + dateStrings[0];
     } else {
