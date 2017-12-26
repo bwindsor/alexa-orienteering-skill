@@ -57,9 +57,19 @@ const raceLevelToSpeech = {
     'act': 'activity'
 }
 
+const racesWord = [
+    'races',
+    'orienteering races',
+    'events',
+    'orienteering events',
+    'orienteering',
+    'competitions'
+]
+
 module.exports = {
     region: region,
     regionToSpeech: regionToSpeech,
     raceLevel: raceLevel,
-    raceLevelToSpeech: raceLevelToSpeech
+    raceLevelToSpeech: raceLevelToSpeech,
+    racesWord: racesWord
 }

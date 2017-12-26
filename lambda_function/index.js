@@ -22,6 +22,16 @@ const handlers = {
         this.emit(':tell', this.t('INTRO_PHRASE'), this.t('INTRO_PHRASE'))
     },
     'GetRaces': function () {
+
+        var didYouMeanRace = DidYouMeanRace(this.event.request.intent.slots);
+        if (didYouMeanRace == null) {
+            this.emit(':tell', this.t('ERROR_BAD_QUESTION'))
+            return
+        }
+        if (didYouMeanRace == true) {
+            this.emit(':tell', this.t['DID_YOU_MEAN_RACE'])
+        }
+
         // Query BOF API for races
         var query = SlotsToQuery(this.event.request.intent.slots);
         if (query == null) {
@@ -73,7 +83,7 @@ function SlotsToQuery(slots) {
     }
     if (slots.hasOwnProperty('Region') && slots.Region.value) {
         var lowerVal = slots.Region.value.toLowerCase();
-        if (slotMapping.region.hasOwnProperty(lowerVal)){
+        if (slotMapping.region.hasOwnProperty(lowerVal)) {
             query.assoc = slotMapping.region[lowerVal];
         } else {
             return null
@@ -88,4 +98,21 @@ function SlotsToQuery(slots) {
         }
     }
     return query;
+}
+
+function DidYouMeanRace(slots) {
+    // Check if they said event
+    if (slots.hasOwnProperty('RacesWord') && slots.RacesWord.value) {
+        var lowerVal = slots.RacesWord.value.toLowerCase();
+        if (slotMapping.racesWord.indexOf(lowerVal) < 0) {
+            // Don't understand
+            return null
+        } else if (lowerVal.includes('event')) {
+            // Did you mean race
+            return true
+        } else {
+            // OK, carry on
+            return false
+        }
+    }
 }

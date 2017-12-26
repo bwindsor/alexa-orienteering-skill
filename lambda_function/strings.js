@@ -9,6 +9,7 @@ languageStrings = {
             STOP_MESSAGE: 'Happy navigating!',
             ERROR_BOF: 'Sorry, I couldn\'t manage to talk to British Orienteering at the moment',
             ERROR_BAD_QUESTION: 'Sorry, I didn\'t understand that',
+            DID_YOU_MEAN_RACE: 'I heard you say event... Did you mean race?',
             RACE_DESCRIPTION_GENERATOR: MakeRaceDescription
         },
     },
