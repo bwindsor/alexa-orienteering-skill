@@ -29,7 +29,8 @@ const handlers = {
             return
         }
         if (didYouMeanRace == true) {
-            this.emit(':tell', this.t['DID_YOU_MEAN_RACE'])
+            this.emit(':tell', this.t('DID_YOU_MEAN_RACE'))
+            return
         }
 
         // Query BOF API for races
@@ -114,5 +115,8 @@ function DidYouMeanRace(slots) {
             // OK, carry on
             return false
         }
+    } else {
+        // Not present, OK
+        return false
     }
 }
