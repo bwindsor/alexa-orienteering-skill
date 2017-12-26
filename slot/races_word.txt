@@ -1,0 +1,6 @@
+races
+orienteering races
+events
+orienteering events
+orienteering
+competitions

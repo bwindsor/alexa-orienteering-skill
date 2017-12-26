@@ -11,14 +11,13 @@ var templates = [
 var slots = {}
 var subDict = {
     findWord: ['find', 'get'],
-    racesWord: ['races', 'orienteering races', 'events', 'orienteering events', 'orienteering', 'competitions']
 }
 var dictionary = {
     findCommand: [
-        utterances('{findWord} {racesWord}', {}, subDict),
-        utterances('{findWord} {-|Level} {racesWord}', {}, subDict).map(s => s.replace('{Level}', '{-|Level}')),
+        ReUtter(utterances('{findWord} {-|RacesWord}', {}, subDict), ['RacesWord']),
+        ReUtter(utterances('{findWord} {-|Level} {-|RacesWord}', {}, subDict), ['Level', 'RacesWord']),
         ['what\'s on'],
-    ].reduce((a,b) => a.concat(b), []),
+    ].reduce((a, b) => a.concat(b), []),
     dateQualifier: [' on', ''],
     locationTemplate: [
         'in {-|Region}'
@@ -32,5 +31,14 @@ var dictionary = {
     ]
 }
 
-var list = templates.map(t => utterances(t, slots, dictionary)).reduce((a,b) => a.concat(b), [])
+var list = templates.map(t => utterances(t, slots, dictionary)).reduce((a, b) => a.concat(b), [])
 fs.writeFileSync('utterances.txt', list.join('\n'))
+
+function ReUtter(arr, typeList) {
+    return arr.map(s => {
+        for (var i = 0; i < typeList.length; i++) {
+            s = s.replace('{' + typeList[i] + '}', '{-|' + typeList[i] + '}')
+        }
+        return s
+    })
+}

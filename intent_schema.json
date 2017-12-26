@@ -22,6 +22,10 @@
                 {
                     "name": "Level",
                     "type": "ORIENTEERING_LEVEL"
+                },
+                {
+                    "name": "RacesWord",
+                    "type": "ORIENTEERING_RACES_WORD"
                 }
             ]
         }

@@ -1,425 +1,85 @@
-GetRaces find races
-GetRaces get races
-GetRaces find orienteering races
-GetRaces get orienteering races
-GetRaces find events
-GetRaces get events
-GetRaces find orienteering events
-GetRaces get orienteering events
-GetRaces find orienteering
-GetRaces get orienteering
-GetRaces find competitions
-GetRaces get competitions
-GetRaces find {Level} races
-GetRaces get {Level} races
-GetRaces find {Level} orienteering races
-GetRaces get {Level} orienteering races
-GetRaces find {Level} events
-GetRaces get {Level} events
-GetRaces find {Level} orienteering events
-GetRaces get {Level} orienteering events
-GetRaces find {Level} orienteering
-GetRaces get {Level} orienteering
-GetRaces find {Level} competitions
-GetRaces get {Level} competitions
+GetRaces find {RacesWord}
+GetRaces get {RacesWord}
+GetRaces find {Level} {RacesWord}
+GetRaces get {Level} {RacesWord}
 GetRaces what's on
-GetRaces find races {RaceDate}
-GetRaces get races {RaceDate}
-GetRaces find orienteering races {RaceDate}
-GetRaces get orienteering races {RaceDate}
-GetRaces find events {RaceDate}
-GetRaces get events {RaceDate}
-GetRaces find orienteering events {RaceDate}
-GetRaces get orienteering events {RaceDate}
-GetRaces find orienteering {RaceDate}
-GetRaces get orienteering {RaceDate}
-GetRaces find competitions {RaceDate}
-GetRaces get competitions {RaceDate}
-GetRaces find {Level} races {RaceDate}
-GetRaces get {Level} races {RaceDate}
-GetRaces find {Level} orienteering races {RaceDate}
-GetRaces get {Level} orienteering races {RaceDate}
-GetRaces find {Level} events {RaceDate}
-GetRaces get {Level} events {RaceDate}
-GetRaces find {Level} orienteering events {RaceDate}
-GetRaces get {Level} orienteering events {RaceDate}
-GetRaces find {Level} orienteering {RaceDate}
-GetRaces get {Level} orienteering {RaceDate}
-GetRaces find {Level} competitions {RaceDate}
-GetRaces get {Level} competitions {RaceDate}
+GetRaces find {RacesWord} {RaceDate}
+GetRaces get {RacesWord} {RaceDate}
+GetRaces find {Level} {RacesWord} {RaceDate}
+GetRaces get {Level} {RacesWord} {RaceDate}
 GetRaces what's on {RaceDate}
-GetRaces find races on {RaceDate}
-GetRaces get races on {RaceDate}
-GetRaces find orienteering races on {RaceDate}
-GetRaces get orienteering races on {RaceDate}
-GetRaces find events on {RaceDate}
-GetRaces get events on {RaceDate}
-GetRaces find orienteering events on {RaceDate}
-GetRaces get orienteering events on {RaceDate}
-GetRaces find orienteering on {RaceDate}
-GetRaces get orienteering on {RaceDate}
-GetRaces find competitions on {RaceDate}
-GetRaces get competitions on {RaceDate}
-GetRaces find {Level} races on {RaceDate}
-GetRaces get {Level} races on {RaceDate}
-GetRaces find {Level} orienteering races on {RaceDate}
-GetRaces get {Level} orienteering races on {RaceDate}
-GetRaces find {Level} events on {RaceDate}
-GetRaces get {Level} events on {RaceDate}
-GetRaces find {Level} orienteering events on {RaceDate}
-GetRaces get {Level} orienteering events on {RaceDate}
-GetRaces find {Level} orienteering on {RaceDate}
-GetRaces get {Level} orienteering on {RaceDate}
-GetRaces find {Level} competitions on {RaceDate}
-GetRaces get {Level} competitions on {RaceDate}
+GetRaces find {RacesWord} on {RaceDate}
+GetRaces get {RacesWord} on {RaceDate}
+GetRaces find {Level} {RacesWord} on {RaceDate}
+GetRaces get {Level} {RacesWord} on {RaceDate}
 GetRaces what's on on {RaceDate}
-GetRaces find races from {StartDate} to {EndDate}
-GetRaces get races from {StartDate} to {EndDate}
-GetRaces find orienteering races from {StartDate} to {EndDate}
-GetRaces get orienteering races from {StartDate} to {EndDate}
-GetRaces find events from {StartDate} to {EndDate}
-GetRaces get events from {StartDate} to {EndDate}
-GetRaces find orienteering events from {StartDate} to {EndDate}
-GetRaces get orienteering events from {StartDate} to {EndDate}
-GetRaces find orienteering from {StartDate} to {EndDate}
-GetRaces get orienteering from {StartDate} to {EndDate}
-GetRaces find competitions from {StartDate} to {EndDate}
-GetRaces get competitions from {StartDate} to {EndDate}
-GetRaces find {Level} races from {StartDate} to {EndDate}
-GetRaces get {Level} races from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering races from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering races from {StartDate} to {EndDate}
-GetRaces find {Level} events from {StartDate} to {EndDate}
-GetRaces get {Level} events from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering events from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering events from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering from {StartDate} to {EndDate}
-GetRaces find {Level} competitions from {StartDate} to {EndDate}
-GetRaces get {Level} competitions from {StartDate} to {EndDate}
+GetRaces find {RacesWord} from {StartDate} to {EndDate}
+GetRaces get {RacesWord} from {StartDate} to {EndDate}
+GetRaces find {Level} {RacesWord} from {StartDate} to {EndDate}
+GetRaces get {Level} {RacesWord} from {StartDate} to {EndDate}
 GetRaces what's on from {StartDate} to {EndDate}
-GetRaces find races from {StartDate} until {EndDate}
-GetRaces get races from {StartDate} until {EndDate}
-GetRaces find orienteering races from {StartDate} until {EndDate}
-GetRaces get orienteering races from {StartDate} until {EndDate}
-GetRaces find events from {StartDate} until {EndDate}
-GetRaces get events from {StartDate} until {EndDate}
-GetRaces find orienteering events from {StartDate} until {EndDate}
-GetRaces get orienteering events from {StartDate} until {EndDate}
-GetRaces find orienteering from {StartDate} until {EndDate}
-GetRaces get orienteering from {StartDate} until {EndDate}
-GetRaces find competitions from {StartDate} until {EndDate}
-GetRaces get competitions from {StartDate} until {EndDate}
-GetRaces find {Level} races from {StartDate} until {EndDate}
-GetRaces get {Level} races from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering races from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering races from {StartDate} until {EndDate}
-GetRaces find {Level} events from {StartDate} until {EndDate}
-GetRaces get {Level} events from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering events from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering events from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering from {StartDate} until {EndDate}
-GetRaces find {Level} competitions from {StartDate} until {EndDate}
-GetRaces get {Level} competitions from {StartDate} until {EndDate}
+GetRaces find {RacesWord} from {StartDate} until {EndDate}
+GetRaces get {RacesWord} from {StartDate} until {EndDate}
+GetRaces find {Level} {RacesWord} from {StartDate} until {EndDate}
+GetRaces get {Level} {RacesWord} from {StartDate} until {EndDate}
 GetRaces what's on from {StartDate} until {EndDate}
-GetRaces find races between {StartDate} and {EndDate}
-GetRaces get races between {StartDate} and {EndDate}
-GetRaces find orienteering races between {StartDate} and {EndDate}
-GetRaces get orienteering races between {StartDate} and {EndDate}
-GetRaces find events between {StartDate} and {EndDate}
-GetRaces get events between {StartDate} and {EndDate}
-GetRaces find orienteering events between {StartDate} and {EndDate}
-GetRaces get orienteering events between {StartDate} and {EndDate}
-GetRaces find orienteering between {StartDate} and {EndDate}
-GetRaces get orienteering between {StartDate} and {EndDate}
-GetRaces find competitions between {StartDate} and {EndDate}
-GetRaces get competitions between {StartDate} and {EndDate}
-GetRaces find {Level} races between {StartDate} and {EndDate}
-GetRaces get {Level} races between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering races between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering races between {StartDate} and {EndDate}
-GetRaces find {Level} events between {StartDate} and {EndDate}
-GetRaces get {Level} events between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering events between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering events between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering between {StartDate} and {EndDate}
-GetRaces find {Level} competitions between {StartDate} and {EndDate}
-GetRaces get {Level} competitions between {StartDate} and {EndDate}
+GetRaces find {RacesWord} between {StartDate} and {EndDate}
+GetRaces get {RacesWord} between {StartDate} and {EndDate}
+GetRaces find {Level} {RacesWord} between {StartDate} and {EndDate}
+GetRaces get {Level} {RacesWord} between {StartDate} and {EndDate}
 GetRaces what's on between {StartDate} and {EndDate}
-GetRaces find races in {Region}
-GetRaces get races in {Region}
-GetRaces find orienteering races in {Region}
-GetRaces get orienteering races in {Region}
-GetRaces find events in {Region}
-GetRaces get events in {Region}
-GetRaces find orienteering events in {Region}
-GetRaces get orienteering events in {Region}
-GetRaces find orienteering in {Region}
-GetRaces get orienteering in {Region}
-GetRaces find competitions in {Region}
-GetRaces get competitions in {Region}
-GetRaces find {Level} races in {Region}
-GetRaces get {Level} races in {Region}
-GetRaces find {Level} orienteering races in {Region}
-GetRaces get {Level} orienteering races in {Region}
-GetRaces find {Level} events in {Region}
-GetRaces get {Level} events in {Region}
-GetRaces find {Level} orienteering events in {Region}
-GetRaces get {Level} orienteering events in {Region}
-GetRaces find {Level} orienteering in {Region}
-GetRaces get {Level} orienteering in {Region}
-GetRaces find {Level} competitions in {Region}
-GetRaces get {Level} competitions in {Region}
+GetRaces find {RacesWord} in {Region}
+GetRaces get {RacesWord} in {Region}
+GetRaces find {Level} {RacesWord} in {Region}
+GetRaces get {Level} {RacesWord} in {Region}
 GetRaces what's on in {Region}
-GetRaces find races in {Region} {RaceDate}
-GetRaces get races in {Region} {RaceDate}
-GetRaces find orienteering races in {Region} {RaceDate}
-GetRaces get orienteering races in {Region} {RaceDate}
-GetRaces find events in {Region} {RaceDate}
-GetRaces get events in {Region} {RaceDate}
-GetRaces find orienteering events in {Region} {RaceDate}
-GetRaces get orienteering events in {Region} {RaceDate}
-GetRaces find orienteering in {Region} {RaceDate}
-GetRaces get orienteering in {Region} {RaceDate}
-GetRaces find competitions in {Region} {RaceDate}
-GetRaces get competitions in {Region} {RaceDate}
-GetRaces find {Level} races in {Region} {RaceDate}
-GetRaces get {Level} races in {Region} {RaceDate}
-GetRaces find {Level} orienteering races in {Region} {RaceDate}
-GetRaces get {Level} orienteering races in {Region} {RaceDate}
-GetRaces find {Level} events in {Region} {RaceDate}
-GetRaces get {Level} events in {Region} {RaceDate}
-GetRaces find {Level} orienteering events in {Region} {RaceDate}
-GetRaces get {Level} orienteering events in {Region} {RaceDate}
-GetRaces find {Level} orienteering in {Region} {RaceDate}
-GetRaces get {Level} orienteering in {Region} {RaceDate}
-GetRaces find {Level} competitions in {Region} {RaceDate}
-GetRaces get {Level} competitions in {Region} {RaceDate}
+GetRaces find {RacesWord} in {Region} {RaceDate}
+GetRaces get {RacesWord} in {Region} {RaceDate}
+GetRaces find {Level} {RacesWord} in {Region} {RaceDate}
+GetRaces get {Level} {RacesWord} in {Region} {RaceDate}
 GetRaces what's on in {Region} {RaceDate}
-GetRaces find races in {Region} on {RaceDate}
-GetRaces get races in {Region} on {RaceDate}
-GetRaces find orienteering races in {Region} on {RaceDate}
-GetRaces get orienteering races in {Region} on {RaceDate}
-GetRaces find events in {Region} on {RaceDate}
-GetRaces get events in {Region} on {RaceDate}
-GetRaces find orienteering events in {Region} on {RaceDate}
-GetRaces get orienteering events in {Region} on {RaceDate}
-GetRaces find orienteering in {Region} on {RaceDate}
-GetRaces get orienteering in {Region} on {RaceDate}
-GetRaces find competitions in {Region} on {RaceDate}
-GetRaces get competitions in {Region} on {RaceDate}
-GetRaces find {Level} races in {Region} on {RaceDate}
-GetRaces get {Level} races in {Region} on {RaceDate}
-GetRaces find {Level} orienteering races in {Region} on {RaceDate}
-GetRaces get {Level} orienteering races in {Region} on {RaceDate}
-GetRaces find {Level} events in {Region} on {RaceDate}
-GetRaces get {Level} events in {Region} on {RaceDate}
-GetRaces find {Level} orienteering events in {Region} on {RaceDate}
-GetRaces get {Level} orienteering events in {Region} on {RaceDate}
-GetRaces find {Level} orienteering in {Region} on {RaceDate}
-GetRaces get {Level} orienteering in {Region} on {RaceDate}
-GetRaces find {Level} competitions in {Region} on {RaceDate}
-GetRaces get {Level} competitions in {Region} on {RaceDate}
+GetRaces find {RacesWord} in {Region} on {RaceDate}
+GetRaces get {RacesWord} in {Region} on {RaceDate}
+GetRaces find {Level} {RacesWord} in {Region} on {RaceDate}
+GetRaces get {Level} {RacesWord} in {Region} on {RaceDate}
 GetRaces what's on in {Region} on {RaceDate}
-GetRaces find races in {Region} from {StartDate} to {EndDate}
-GetRaces get races in {Region} from {StartDate} to {EndDate}
-GetRaces find orienteering races in {Region} from {StartDate} to {EndDate}
-GetRaces get orienteering races in {Region} from {StartDate} to {EndDate}
-GetRaces find events in {Region} from {StartDate} to {EndDate}
-GetRaces get events in {Region} from {StartDate} to {EndDate}
-GetRaces find orienteering events in {Region} from {StartDate} to {EndDate}
-GetRaces get orienteering events in {Region} from {StartDate} to {EndDate}
-GetRaces find orienteering in {Region} from {StartDate} to {EndDate}
-GetRaces get orienteering in {Region} from {StartDate} to {EndDate}
-GetRaces find competitions in {Region} from {StartDate} to {EndDate}
-GetRaces get competitions in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} races in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} races in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering races in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering races in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} events in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} events in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering events in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering events in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} orienteering in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} orienteering in {Region} from {StartDate} to {EndDate}
-GetRaces find {Level} competitions in {Region} from {StartDate} to {EndDate}
-GetRaces get {Level} competitions in {Region} from {StartDate} to {EndDate}
+GetRaces find {RacesWord} in {Region} from {StartDate} to {EndDate}
+GetRaces get {RacesWord} in {Region} from {StartDate} to {EndDate}
+GetRaces find {Level} {RacesWord} in {Region} from {StartDate} to {EndDate}
+GetRaces get {Level} {RacesWord} in {Region} from {StartDate} to {EndDate}
 GetRaces what's on in {Region} from {StartDate} to {EndDate}
-GetRaces find races in {Region} from {StartDate} until {EndDate}
-GetRaces get races in {Region} from {StartDate} until {EndDate}
-GetRaces find orienteering races in {Region} from {StartDate} until {EndDate}
-GetRaces get orienteering races in {Region} from {StartDate} until {EndDate}
-GetRaces find events in {Region} from {StartDate} until {EndDate}
-GetRaces get events in {Region} from {StartDate} until {EndDate}
-GetRaces find orienteering events in {Region} from {StartDate} until {EndDate}
-GetRaces get orienteering events in {Region} from {StartDate} until {EndDate}
-GetRaces find orienteering in {Region} from {StartDate} until {EndDate}
-GetRaces get orienteering in {Region} from {StartDate} until {EndDate}
-GetRaces find competitions in {Region} from {StartDate} until {EndDate}
-GetRaces get competitions in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} races in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} races in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering races in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering races in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} events in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} events in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering events in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering events in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} orienteering in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} orienteering in {Region} from {StartDate} until {EndDate}
-GetRaces find {Level} competitions in {Region} from {StartDate} until {EndDate}
-GetRaces get {Level} competitions in {Region} from {StartDate} until {EndDate}
+GetRaces find {RacesWord} in {Region} from {StartDate} until {EndDate}
+GetRaces get {RacesWord} in {Region} from {StartDate} until {EndDate}
+GetRaces find {Level} {RacesWord} in {Region} from {StartDate} until {EndDate}
+GetRaces get {Level} {RacesWord} in {Region} from {StartDate} until {EndDate}
 GetRaces what's on in {Region} from {StartDate} until {EndDate}
-GetRaces find races in {Region} between {StartDate} and {EndDate}
-GetRaces get races in {Region} between {StartDate} and {EndDate}
-GetRaces find orienteering races in {Region} between {StartDate} and {EndDate}
-GetRaces get orienteering races in {Region} between {StartDate} and {EndDate}
-GetRaces find events in {Region} between {StartDate} and {EndDate}
-GetRaces get events in {Region} between {StartDate} and {EndDate}
-GetRaces find orienteering events in {Region} between {StartDate} and {EndDate}
-GetRaces get orienteering events in {Region} between {StartDate} and {EndDate}
-GetRaces find orienteering in {Region} between {StartDate} and {EndDate}
-GetRaces get orienteering in {Region} between {StartDate} and {EndDate}
-GetRaces find competitions in {Region} between {StartDate} and {EndDate}
-GetRaces get competitions in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} races in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} races in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering races in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering races in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} events in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} events in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering events in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering events in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} orienteering in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} orienteering in {Region} between {StartDate} and {EndDate}
-GetRaces find {Level} competitions in {Region} between {StartDate} and {EndDate}
-GetRaces get {Level} competitions in {Region} between {StartDate} and {EndDate}
+GetRaces find {RacesWord} in {Region} between {StartDate} and {EndDate}
+GetRaces get {RacesWord} in {Region} between {StartDate} and {EndDate}
+GetRaces find {Level} {RacesWord} in {Region} between {StartDate} and {EndDate}
+GetRaces get {Level} {RacesWord} in {Region} between {StartDate} and {EndDate}
 GetRaces what's on in {Region} between {StartDate} and {EndDate}
-GetRaces find races {RaceDate} in {Region}
-GetRaces get races {RaceDate} in {Region}
-GetRaces find orienteering races {RaceDate} in {Region}
-GetRaces get orienteering races {RaceDate} in {Region}
-GetRaces find events {RaceDate} in {Region}
-GetRaces get events {RaceDate} in {Region}
-GetRaces find orienteering events {RaceDate} in {Region}
-GetRaces get orienteering events {RaceDate} in {Region}
-GetRaces find orienteering {RaceDate} in {Region}
-GetRaces get orienteering {RaceDate} in {Region}
-GetRaces find competitions {RaceDate} in {Region}
-GetRaces get competitions {RaceDate} in {Region}
-GetRaces find {Level} races {RaceDate} in {Region}
-GetRaces get {Level} races {RaceDate} in {Region}
-GetRaces find {Level} orienteering races {RaceDate} in {Region}
-GetRaces get {Level} orienteering races {RaceDate} in {Region}
-GetRaces find {Level} events {RaceDate} in {Region}
-GetRaces get {Level} events {RaceDate} in {Region}
-GetRaces find {Level} orienteering events {RaceDate} in {Region}
-GetRaces get {Level} orienteering events {RaceDate} in {Region}
-GetRaces find {Level} orienteering {RaceDate} in {Region}
-GetRaces get {Level} orienteering {RaceDate} in {Region}
-GetRaces find {Level} competitions {RaceDate} in {Region}
-GetRaces get {Level} competitions {RaceDate} in {Region}
+GetRaces find {RacesWord} {RaceDate} in {Region}
+GetRaces get {RacesWord} {RaceDate} in {Region}
+GetRaces find {Level} {RacesWord} {RaceDate} in {Region}
+GetRaces get {Level} {RacesWord} {RaceDate} in {Region}
 GetRaces what's on {RaceDate} in {Region}
-GetRaces find races on {RaceDate} in {Region}
-GetRaces get races on {RaceDate} in {Region}
-GetRaces find orienteering races on {RaceDate} in {Region}
-GetRaces get orienteering races on {RaceDate} in {Region}
-GetRaces find events on {RaceDate} in {Region}
-GetRaces get events on {RaceDate} in {Region}
-GetRaces find orienteering events on {RaceDate} in {Region}
-GetRaces get orienteering events on {RaceDate} in {Region}
-GetRaces find orienteering on {RaceDate} in {Region}
-GetRaces get orienteering on {RaceDate} in {Region}
-GetRaces find competitions on {RaceDate} in {Region}
-GetRaces get competitions on {RaceDate} in {Region}
-GetRaces find {Level} races on {RaceDate} in {Region}
-GetRaces get {Level} races on {RaceDate} in {Region}
-GetRaces find {Level} orienteering races on {RaceDate} in {Region}
-GetRaces get {Level} orienteering races on {RaceDate} in {Region}
-GetRaces find {Level} events on {RaceDate} in {Region}
-GetRaces get {Level} events on {RaceDate} in {Region}
-GetRaces find {Level} orienteering events on {RaceDate} in {Region}
-GetRaces get {Level} orienteering events on {RaceDate} in {Region}
-GetRaces find {Level} orienteering on {RaceDate} in {Region}
-GetRaces get {Level} orienteering on {RaceDate} in {Region}
-GetRaces find {Level} competitions on {RaceDate} in {Region}
-GetRaces get {Level} competitions on {RaceDate} in {Region}
+GetRaces find {RacesWord} on {RaceDate} in {Region}
+GetRaces get {RacesWord} on {RaceDate} in {Region}
+GetRaces find {Level} {RacesWord} on {RaceDate} in {Region}
+GetRaces get {Level} {RacesWord} on {RaceDate} in {Region}
 GetRaces what's on on {RaceDate} in {Region}
-GetRaces find races from {StartDate} to {EndDate} in {Region}
-GetRaces get races from {StartDate} to {EndDate} in {Region}
-GetRaces find orienteering races from {StartDate} to {EndDate} in {Region}
-GetRaces get orienteering races from {StartDate} to {EndDate} in {Region}
-GetRaces find events from {StartDate} to {EndDate} in {Region}
-GetRaces get events from {StartDate} to {EndDate} in {Region}
-GetRaces find orienteering events from {StartDate} to {EndDate} in {Region}
-GetRaces get orienteering events from {StartDate} to {EndDate} in {Region}
-GetRaces find orienteering from {StartDate} to {EndDate} in {Region}
-GetRaces get orienteering from {StartDate} to {EndDate} in {Region}
-GetRaces find competitions from {StartDate} to {EndDate} in {Region}
-GetRaces get competitions from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} races from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} races from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} orienteering races from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} orienteering races from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} events from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} events from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} orienteering events from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} orienteering events from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} orienteering from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} orienteering from {StartDate} to {EndDate} in {Region}
-GetRaces find {Level} competitions from {StartDate} to {EndDate} in {Region}
-GetRaces get {Level} competitions from {StartDate} to {EndDate} in {Region}
+GetRaces find {RacesWord} from {StartDate} to {EndDate} in {Region}
+GetRaces get {RacesWord} from {StartDate} to {EndDate} in {Region}
+GetRaces find {Level} {RacesWord} from {StartDate} to {EndDate} in {Region}
+GetRaces get {Level} {RacesWord} from {StartDate} to {EndDate} in {Region}
 GetRaces what's on from {StartDate} to {EndDate} in {Region}
-GetRaces find races from {StartDate} until {EndDate} in {Region}
-GetRaces get races from {StartDate} until {EndDate} in {Region}
-GetRaces find orienteering races from {StartDate} until {EndDate} in {Region}
-GetRaces get orienteering races from {StartDate} until {EndDate} in {Region}
-GetRaces find events from {StartDate} until {EndDate} in {Region}
-GetRaces get events from {StartDate} until {EndDate} in {Region}
-GetRaces find orienteering events from {StartDate} until {EndDate} in {Region}
-GetRaces get orienteering events from {StartDate} until {EndDate} in {Region}
-GetRaces find orienteering from {StartDate} until {EndDate} in {Region}
-GetRaces get orienteering from {StartDate} until {EndDate} in {Region}
-GetRaces find competitions from {StartDate} until {EndDate} in {Region}
-GetRaces get competitions from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} races from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} races from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} orienteering races from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} orienteering races from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} events from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} events from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} orienteering events from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} orienteering events from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} orienteering from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} orienteering from {StartDate} until {EndDate} in {Region}
-GetRaces find {Level} competitions from {StartDate} until {EndDate} in {Region}
-GetRaces get {Level} competitions from {StartDate} until {EndDate} in {Region}
+GetRaces find {RacesWord} from {StartDate} until {EndDate} in {Region}
+GetRaces get {RacesWord} from {StartDate} until {EndDate} in {Region}
+GetRaces find {Level} {RacesWord} from {StartDate} until {EndDate} in {Region}
+GetRaces get {Level} {RacesWord} from {StartDate} until {EndDate} in {Region}
 GetRaces what's on from {StartDate} until {EndDate} in {Region}
-GetRaces find races between {StartDate} and {EndDate} in {Region}
-GetRaces get races between {StartDate} and {EndDate} in {Region}
-GetRaces find orienteering races between {StartDate} and {EndDate} in {Region}
-GetRaces get orienteering races between {StartDate} and {EndDate} in {Region}
-GetRaces find events between {StartDate} and {EndDate} in {Region}
-GetRaces get events between {StartDate} and {EndDate} in {Region}
-GetRaces find orienteering events between {StartDate} and {EndDate} in {Region}
-GetRaces get orienteering events between {StartDate} and {EndDate} in {Region}
-GetRaces find orienteering between {StartDate} and {EndDate} in {Region}
-GetRaces get orienteering between {StartDate} and {EndDate} in {Region}
-GetRaces find competitions between {StartDate} and {EndDate} in {Region}
-GetRaces get competitions between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} races between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} races between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} orienteering races between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} orienteering races between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} events between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} events between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} orienteering events between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} orienteering events between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} orienteering between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} orienteering between {StartDate} and {EndDate} in {Region}
-GetRaces find {Level} competitions between {StartDate} and {EndDate} in {Region}
-GetRaces get {Level} competitions between {StartDate} and {EndDate} in {Region}
+GetRaces find {RacesWord} between {StartDate} and {EndDate} in {Region}
+GetRaces get {RacesWord} between {StartDate} and {EndDate} in {Region}
+GetRaces find {Level} {RacesWord} between {StartDate} and {EndDate} in {Region}
+GetRaces get {Level} {RacesWord} between {StartDate} and {EndDate} in {Region}
 GetRaces what's on between {StartDate} and {EndDate} in {Region}
